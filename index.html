@@ -7,7 +7,8 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -30,15 +31,15 @@
     </script>
     <!-- custom style -->
     <style>
-        .font_lato {
+        .font_poppins {
             font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
 
-<body class="font_lato">
+<body class="font_poppins mx-60 mt-12">
     <!-- header start -->
-    <header class="mx-60 mt-12">
+    <header>
         <!-- navbar style -->
         <nav class="bg-color_primary rounded-[600px] text-white px-16 py-12">
             <div class="flex justify-between items-center">
@@ -66,18 +67,87 @@
                 </div>
             </div>
         </nav>
-        <!-- banner -->
-        <div>
-            <div class="grid justify-center ">
-                <h3>Exotic tastes at your <br> doorstep</h3>
-                <p>We supply highly quality organic products</p>
-                <button>Shop Now</button>
+        <!-- slider -->
+        <div class="mt-14">
+            <div class="carousel lg:h-[600px] opacity-" style="background-image: url(./images/banner1.png); background-repeat: no-repeat;">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="">
+                        <div class="text-white space-y-6">
+                            <h2 class="text-[72px]font-extrabold">Exotic tastes at your <br> doorstep</h2>
+                            <p class="">We supply highly quality organic products</p>
+                            <button class="btn bg-color_primary rounded-lg px-8 py-5">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-[122px] h-[200px] bg-white px-[122px] drop-shadow-lg -mt-28 rounded-lg">
+                <div class="flex justify-between py-12 px-16 gap-24">
+                    <div class="space-y-3">
+                        <img src="./images/fruit1.png" alt="">
+                        <p>Grapes</p>
+                    </div>
+                    <div class="space-y-3 justify-center">
+                        <img src="./images/fruit2.png" alt="">
+                        <p>Orange</p>
+                    </div>
+                    <div class="space-y-3">
+                        <img src="./images/fruit3.png" alt="">
+                        <p>Mango</p>
+                    </div>
+                    <div class="space-y-3">
+                        <img src="./images/fruit4.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="space-y-3">
+                        <img src="./images/fruit5.png" alt="">
+                        <p>Pomegranate</p>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <!-- main start -->
     <main>
-
+       <!-- countdown section -->
+       <div class="flex justify-between items-center mt-28">
+        <div>
+            <h3 class="text-[48px] text-[#121212] font-extrabold">Deal of the day</h3>
+            <p class="text-base text-[#121212] font-medium w-[615px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:35;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+        </div>
+       </div>
     </main>
     <!-- footer start -->
     <footer>
